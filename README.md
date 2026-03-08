@@ -4,8 +4,10 @@
 1. 手动启动一次服务端
 2. 在Minecraft服务端`server.properties`配置文件中配置`enable-rcon`为`true`, 配置`rcon.port`和`rcon.password`
 3. 配置`config.py`中的配置项
-4. 正常启动python脚本
-tips: `v2`模式的客户端正在开发中 [MSAL v2 Mode Client](https://github.com/xzb23/MSAL-v2-Mode-Client)
+4. 正常启动python脚本  
+### tips 
+1. `v2`模式的客户端正在开发中 [MSAL v2 Mode Client](https://github.com/xzb23/MSAL-v2-Mode-Client)
+2. 对于无法使用python脚本的情况，请自行编译为可执行文件
 ## 开发计划
 - [ ] 日志系统
 - [ ] v2客户端
