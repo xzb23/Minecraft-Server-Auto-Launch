@@ -1,6 +1,6 @@
 LAUNCH: str = "" # 设置自定义启动命令，非空JAVA_PATH和SERVER_PATH配置无效
-JAVA_PATH = "D:/Java/jdk8u472-b08/bin/java" # Java可执行文件路径
-SERVER_PATH = "E:/mc/fwd-test/CatServer-4168d848-universal.jar" # 服务端核心jar包路径
+JAVA_PATH = "java" # Java可执行文件路径
+SERVER_PATH = "CatServer.jar" # 服务端核心jar包路径
 RCON_HOST = '127.0.0.1' # 服务器IP，本地则为127.0.0.1
 RCON_PORT = 25575 # RCON端口 (在server.properties中设置)
 RCON_PASSWORD = 'testpassword' # RCON密码 (在server.properties中设置)
