@@ -8,6 +8,7 @@ CHECK_INTERVAL = 10 # 检查在线人数的时间间隔，单位为秒
 MODE = "v1" # 运行模式，v1模式只要检测到连接就自动开启服务端，v2模式需要验证KEY
 KEY = b"testkey" # 验证KEY，仅v2模式使用
 STOP_FLAG = b"stoptestkey" # 关闭服务端的KEY，v1,v2模式均可使用
+PORT = 25565 # 监听端口，客户端连接到这个端口来触发服务端启动
 
 # DATA
 process = None

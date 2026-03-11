@@ -7,7 +7,7 @@ def start_server():
         return -1 # 服务端已在运行
     tcp_server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-    tcp_server.bind(('0.0.0.0', 25565))
+    tcp_server.bind(('0.0.0.0', config.PORT))
 
     tcp_server.listen(1)
     conn, addr = tcp_server.accept()
