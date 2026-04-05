@@ -1,5 +1,6 @@
 from package import *
 import config
+import forwarding
 
 def get_number_of_players() -> int:
     try:
@@ -115,12 +116,16 @@ if True:
         if not runing_check():
             print('服务端未在运行，准备启动')
             if start_server() == -3: break
+            time.sleep(3)
             time.sleep(config.WAIT_FOR_THE_RUNTIME) # 等待服务端启动
         else:
+            thread = threading.Thread(target=forwarding.run, daemon=True)
+            thread.start()
             while True:
                 time.sleep(config.CHECK_INTERVAL) 
                 if stop_flag():
                     print('在线人数为0，准备关闭服务端')
+                    config.server.close()
                     stop_server()
                     break
 else:
