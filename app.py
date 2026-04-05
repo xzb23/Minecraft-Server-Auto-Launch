@@ -114,7 +114,7 @@ if True:
     while True:
         time.sleep(3)
         if not runing_check():
-            print('服务端未在运行，准备启动')
+            print('服务端未在运行，等待消息')
             if start_server() == -3: break
             time.sleep(3)
             time.sleep(config.WAIT_FOR_THE_RUNTIME) # 等待服务端启动
