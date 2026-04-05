@@ -1,3 +1,6 @@
+# 此文件是对[https://github.com/Mz1z/Mrp]的修改
+# 基于[Apache-2.0 license]分发
+
 from package import *
 import config
 
