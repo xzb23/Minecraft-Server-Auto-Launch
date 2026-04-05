@@ -1,7 +1,7 @@
 # Minecraft-Server-Auto-Launch
 用于自动控制Minecraft服务端启动/停止的Python脚本
 
-以及游戏消息和RCON消息的转发
+以及针对部分只能开放一个端口的游戏云的游戏消息和RCON消息的转发
 ## 使用教程
 1. 手动启动一次服务端
 2. 在Minecraft服务端`server.properties`配置文件中配置`enable-rcon`为`true`, 配置`rcon.port`和`rcon.password`
@@ -13,6 +13,7 @@
 ## 开发计划
 - [ ] 日志系统
 - [ ] 客户端
-- [x] 游戏消息和RCON消息的转发（针对部分只能开放一个端口的游戏云）
+- [x] 游戏消息和RCON消息的转发（现在你可以在部分只能开放一个端口的游戏云远程执行服务端命令了
+- [ ] 消息转发的开关 and 服务端自动启动/停止的开关
 ## 鸣谢
 [Mrp](https://github.com/Mz1z/Mrp) - 参考使用了其部分代码
